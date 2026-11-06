@@ -52,8 +52,17 @@ async function send({ to, subject, html, replyTo }) {
   if (!res.ok) throw new Error(`Brevo ${res.status}: ${await res.text()}`);
 }
 
+const { waitUntil } = require('@vercel/functions');
+
 // Never let a failed email lose a submission: it's already saved, so log and carry on.
-async function notify(staff, parent) {
+// Emails go out after the reply; waitUntil keeps a Vercel function alive until they're sent (elsewhere it does nothing).
+function notify(staff, parent) {
+  const job = sendAll(staff, parent);
+  waitUntil(job);
+  return job;
+}
+
+async function sendAll(staff, parent) {
   const admissions = process.env.ADMISSIONS_EMAIL;
   const jobs = [];
   if (admissions) jobs.push(send({ to: admissions, ...staff }));
