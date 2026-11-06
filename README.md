@@ -85,4 +85,10 @@ export MYSQL_ROOT_PASSWORD=choose-a-strong-password
 docker compose -f docker-compose.prod.yml up -d --build
 ```
 
-The website can also be hosted on its own (Vercel, Netlify) from `frontend/` with `VITE_API_URL` pointing at the API.
+### Website and API on separate hosts (how bhg-academy.com runs)
+
+The website is on Vercel (root directory `frontend/`) at https://www.bhg-academy.com, and the API is hosted on its own. To connect them:
+
+1. **API host:** set `CLIENT_URL=https://www.bhg-academy.com,https://bhg-academy.com` along with the other backend variables. Only these sites may send forms, and emails load the crest from the first one. Then run `npx prisma migrate deploy`.
+2. **Vercel (website project):** under Settings → Environment Variables, set `VITE_API_URL` to the API address **including `/api`**, for example `https://api.bhg-academy.com/api`. Then redeploy; Vite only reads the variable at build time.
+3. **Check:** `https://<api-host>/api/health` returns `{"ok":true}`, and the enquiry form on the website shows its success message.
