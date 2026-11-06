@@ -1,0 +1,202 @@
+Bethel House of God Academy (BHGA) — Complete Website & Structure
+BRANDING & VISUAL GUIDELINES FOR DEVELOPER
+- Institution Name: Bethel House of God Academy (BHGA)
+- Official Motto: Real Christian Values, Real life Education
+- Primary Color Palette:
+- Royal Blue: #2B5B84 (Dominant primary color for headers, buttons, and section backgrounds)
+- Warm Gold / Mustard: #D4A853 (Secondary accent color for highlights, badges, borders, and call-to-action buttons)
+- Soft White / Light Cream: #F9F9FB (Background canvas color for clean readability)
+- Typography Style: Elegant Serif for titles/headings (matching logo aesthetic) paired with clean Sans-Serif (e.g., Inter or Montserrat) for body text.
+NAVIGATION & HEADER (Every Page)
+- Header Branding: [ LOGO IMAGE: BHGA Shield Crest ] Bethel House of God Academy
+- Header Tagline: Real Christian Values, Real life Education
+- Header Navigation Links:
+- Home
+- About Us
+- Academics & Programs
+- Private Candidate & Exam Guide
+- Tuition & Fees
+- Admissions & Contact
+- Header CTA Buttons: [ Enroll Now ] | [ Book a Free Consultation ]
+PAGE 1: HOMEPAGE
+1. HERO SECTION
+- Headline: Real Christian Values, Real Life Education
+- Sub-headline: Empowering Grade R to High School learners across South Africa through high-quality, faith-based Cambridge online tuition on our interactive Edubridge platform.
+- Primary Button (Gold): [ Explore Our Programs ]
+- Secondary Button (Blue Outline): [ View Fee Structure ]
+2. WELCOME TO BETHEL HOUSE OF GOD ACADEMY (BHGA)
+At Bethel House of God Academy, we nurture the whole child—academically, spiritually, and morally. We provide a safe, respectful, and inclusive virtual learning environment that builds a strong foundation for life-long learning. Our structured online tuition program supports home education families by offering rigorous, Cambridge-aligned academic instruction delivered by dedicated educators.
+3. THE BHGA ADVANTAGE
+Safe & Inclusive Environment
+We provide a respectful online campus where learners grow in confidence, critical thinking, and Christian leadership under the guidance of passionate educators.
+Powered by Edubridge E-Learning
+Our students access interactive live virtual classes, on-demand lesson recordings, digital study packs, and comprehensive revision resources anytime, anywhere.
+Global Cambridge Framework
+We prepare learners for internationally recognized Cambridge qualifications, paving the way for university admission in South Africa (via USAf Matriculation Exemption) and globally.
+100% Exam-Based (No Continuous SBA Stress)
+Because Cambridge private candidate pathways are evaluated through final external board examinations, families avoid the administrative burden and continuous portfolio marking costs of traditional distance schools.
+4. OUR LEARNING PATHWAYS AT A GLANCE
+- Grade R – Grade 3 (Foundation Phase)
+Monthly Fee: R2,800
+Building strong foundational literacy, numeracy, and core inquiry in a supportive, engaging digital classroom.
+- Grade 4 – Grade 6 (Intermediate Phase / Primary Stage)
+Monthly Fee: R3,000
+Consolidating core concepts in English, Mathematics, Science, and Humanities to prepare learners for upper primary benchmarks.
+- Grade 7 – Grade 9 (Lower Secondary Phase)
+Monthly Fee: R3,300
+Developing advanced analytical skills across languages, mathematics, sciences, and electives as learners transition into high school.
+- IGCSE & Senior Phase (Grades 10–12)
+Monthly Fee: R3,900
+Comprehensive preparation across core compulsory subjects and specialized streams (Sciences, Commercials, Humanities) for international board exams and university entrance.
+5. HOW IT WORKS: 4 SIMPLE STEPS TO GRADUATION
+- Enroll with BHGA
+Register your child for online tuition and receive immediate access to the Edubridge E-Learning platform, live classes, and study packs.
+- Learn & Master Content
+Participate in interactive daily virtual lessons, complete internal progress assessments, and work through past-paper drills guided by subject teachers.
+- Register for External Board Exams
+When ready to write official Cambridge examinations (IGCSE / AS Level), register directly as a Private Candidate at an accredited host centre near you (such as British Council SA or local approved open centres).
+- Earn Accredited Certificates
+Receive official Cambridge UK certificates and convert your results through USAf (Universities South Africa) for direct entrance into local or international bachelor's degree programs.
+6. HOMEPAGE LEAD CAPTURE FORM
+- Heading: Begin Your Child's Journey to Academic & Character Excellence
+- Sub-text: Fill in your details below and our admissions coordinator will get in touch with you.
+- Fields:
+- Parent / Guardian Full Name
+- Email Address
+- WhatsApp / Phone Number
+- Learner's Target Grade (Grade R – Grade 12)
+- Current Curriculum (Cambridge)
+- Submit Button: [ Submit Admission Enquiry ]
+PAGE 2: ABOUT US
+1. PAGE HEADER
+- Title: About Bethel House of God Academy
+- Subtitle: Building a Solid Foundation for Academic Excellence & Christian Leadership
+2. OUR VISION
+Our vision is to provide a platform for academic excellence, spiritual profundity, skills development and sound character development. We aim to produce children who will bring a positive impact to the society.
+3. OUR MISSION
+Our Mission is to provide high quality education and childcare in a safe, respectful and inclusive environment that builds a foundation for life-long learning.
+4. WHAT WE BELIEVE (STATEMENT OF FAITH)
+We believe in the role of the Holy Spirit in raising Christian leaders in these last days.
+At Bethel House of God Academy, our Christian foundation informs everything we do. We instill values of integrity, respect, diligence, and service in our learners, ensuring that academic growth goes hand in hand with moral and spiritual maturity.
+5. OUR BUSINESS & ACADEMIC STRUCTURE
+The success of any educational institution depends on the strength of its leadership, governance, and the dedicated team occupying key operational roles.
+Bethel House of God Academy is built on a solid organizational structure that supports continuous growth, academic integrity, and student care. We employ competent, highly qualified teaching and administrative staff who share our commitment to excellence.
+Our academic team is structured into specialized departments:
+- Foundation Phase Specialists (Grade R – Grade 3): Nurturing early literacy, numeracy, and developmental foundations.
+- Mathematics & Sciences Faculty: Delivering rigorous, conceptual instruction in Mathematics, Physics, Chemistry, and Biology.
+- Languages Department: Fostering communication excellence in English and Afrikaans.
+- Commercials Department: Guiding high school learners through Accounting, Business Studies, and Economics.
+- Humanities Faculty: Educating learners in Geography, History, Global Perspectives, and Physical Education.
+PAGE 3: ACADEMICS & CURRICULUM
+1. PAGE HEADER
+- Title: Academic Programs & Subject Streams
+- Subtitle: Cambridge-Aligned Instruction from Early Learning to Senior High School
+2. FOUNDATION PHASE (GRADE R – GRADE 3)
+Our early learning program provides a structured, gentle introduction to online education, focusing on reading confidence, numerical comprehension, and creative curiosity.
+- Core Focus Areas: Foundation English, Early Mathematics, Environmental Science, Creative Arts, and Values Education.
+- Learning Format: Live daily virtual classes, guided interactive exercises, and teacher-assessed unit reviews.
+3. INTERMEDIATE PHASE (GRADE 4 – GRADE 6)
+During the primary years, learners transition from basic literacy to conceptual understanding across core subjects.
+- Core Subjects: English Language, Mathematics, Natural Sciences, Humanities, and Digital Literacy.
+- Learning Format: Structured weekly schedules on the Edubridge platform, live teacher instruction, and diagnostic unit checks.
+4. LOWER SECONDARY PHASE (GRADE 7 – GRADE 9)
+This stage bridges primary education with high school specialization, building analytical reasoning, scientific inquiry, and structured essay-writing skills.
+- Core Subjects: Advanced English, Mathematics, General Science (Physics, Chemistry, Biology), History, Geography, and ICT.
+- Goal: Building academic confidence and subject readiness for IGCSE selection.
+5. CAMBRIDGE IGCSE & SENIOR HIGH SCHOOL (GRADES 10–12)
+At high school level, BHGA offers comprehensive teaching across compulsory core subjects and specialized elective streams.
+Compulsory Core Subjects
+- English Language (Compulsory)
+- Mathematics (Compulsory)
+Elective Streams & Available Subjects
+- Sciences: Physics, Chemistry, Biology
+- Commercials: Accounting, Business Studies, Economics
+- Humanities & IT: Geography, Computer Science
+High School University Pathway (USAf Exemption Track)
+For learners aiming for South African university entrance after high school, we guide students through the required 4 AS Level + 1 IGCSE subject selection (covering First Language, Second Language, Quantitative/Science, and Academic Electives) to satisfy Universities South Africa (USAf) Foreign Matriculation Exemption requirements.
+PAGE 4: PRIVATE CANDIDATE & EXAM GUIDE
+1. PAGE HEADER
+- Title: Understanding the Private Candidate Pathway
+- Subtitle: Transparent Guidance on How Cambridge Board Exams & Qualifications Work
+2. WHAT IS AN INDEPENDENT TUITION PLATFORM?
+Bethel House of God Academy operates as an independent online tuition and learning support platform. We provide complete daily academic delivery, virtual live teaching, Edubridge platform access, past-paper drills, and progress tracking.
+We do not charge high administrative board affiliation surcharges. Instead, our model allows parents to pay purely for quality teaching, while board examination registration is completed independently when the learner is ready.
+3. HOW BOARD EXAMINATIONS WORK
+- Tuition at BHGA: Learners complete their daily learning, live classes, and revision online with Bethel House of God Academy.
+- Selecting an Exam Centre: When ready to write board exams (such as Checkpoints, IGCSE, or AS Levels), parents register their child as a Private Candidate at an accredited open Cambridge examination centre (such as British Council South Africa or approved local open centres).
+- Sitting Examinations: The student physically sits for their external board papers during the official May/June or October/November examination series.
+- Receiving UK Qualifications: Cambridge International issues official hardcopy certificates directly to the examination centre for collection.
+4. SOUTH AFRICAN UNIVERSITY ENTRY (USAF EXEMPTION)
+Cambridge qualifications are fully recognized by all South African public universities (such as UCT, Wits, UP, Stellenbosch, Unisa, etc.) and international institutions worldwide.
+To qualify for a South African Foreign Matriculation Exemption (Bachelor's Degree Pass equivalent), high school learners complete:
+4 AS Levels (Grades A–D) + 1 IGCSE (Grades A*–C)
+Once board results are released in January, certificates are submitted to Universities South Africa (USAf) to receive a formal Matriculation Exemption Certificate for direct university enrollment.
+PAGE 5: TUITION & FEES
+1. PAGE HEADER
+- Title: Transparent Tuition & Fee Structure
+- Subtitle: Quality International Online Education Made Accessible
+2. REGISTRATION FEE
+- Registration Fee: R1,000 (Once-off non-refundable administrative onboarding fee per learner)
+3. MONTHLY TUITION FEE SCHEDULE
+Grade / Programme
+Covered Phases
+Monthly Tuition Fee
+GRADE (R – 3)
+Foundation Phase
+R2,800 / month
+GRADE (4 – 6)
+Intermediate Phase
+R3,000 / month
+GRADE (7 – 9)
+Lower Secondary Phase
+R3,300 / month
+IGCSE (Grades 10–12)
+Senior High School (Up to 8 Subjects)
+R3,900 / month
+4. WHAT OUR TUITION INCLUDES
+- Access to live daily virtual classes led by qualified educators.
+- 24/7 access to the Edubridge E-Learning platform (recorded lessons, study notes, and exercises).
+- Comprehensive subject coverage across core, language, science, commercial, and humanities streams.
+- Regular internal progress checks, mock examination papers, and tutor feedback.
+- Parent support and academic progress tracking.
+5. IMPORTANT EXAM FEE DISCLAIMER
+Exam Fee Note:
+Monthly tuition fees cover all online instruction, platform access, learning materials, and internal academic support provided by Bethel House of God Academy. Official external Cambridge Board Examination fees (written at Checkpoint, IGCSE, or AS Level) are separate and are paid directly by parents to the accredited exam host venue (e.g., British Council South Africa) at the time of exam entry.
+PAGE 6: EDUBRIDGE E-LEARNING PLATFORM
+1. PAGE HEADER
+- Title: Edubridge E-Learning Infrastructure
+- Subtitle: Innovative, Interactive Virtual Learning for Every Student
+2. PLATFORM FEATURES
+- Live Virtual Classrooms: Interactive daily video lectures with real-time teacher-student interaction.
+- 24/7 On-Demand Video Library: Every live class is recorded and stored so students can revisit complex concepts during revision.
+- Digital Workbooks & Study Packs: Downloadable notes, exercise sets, and textbook guides aligned with syllabus codes.
+- Past Paper Vault: Access to official past exam papers, specimen papers, and marking schemes for exam drills.
+- Parent & Learner Dashboard: Clear visibility into attendance records, submission deadlines, and assessment scores.
+PAGE 7: ADMISSIONS & CONTACT
+1. PAGE HEADER
+- Title: Join Bethel House of God Academy
+- Subtitle: Enrollment & Consultation Enquiries
+2. ENROLLMENT APPLICATION FORM
+Fill in the form below to begin the application process for your child:
+- Parent / Guardian Full Name: [ Input Field ]
+- Parent Email Address: [ Input Field ]
+- Parent Phone / WhatsApp Number: [ Input Field ]
+- Physical Address / Location: [ Input Field ]
+- Student Name & Surname: [ Input Field ]
+- Student Date of Birth: [ Input Field ]
+- Select Target Grade for Enrollment:
+- [ ] Grade R – 3 (Foundation Phase – R2,800/pm)
+- [ ] Grade 4 – 6 (Intermediate Phase – R3,000/pm)
+- [ ] Grade 7 – 9 (Lower Secondary Phase – R3,300/pm)
+- [ ] IGCSE Grade 10–12 (Senior Phase – R3,900/pm)
+- Current Curriculum / Previous Schooling: [ Input Field ]
+- Intended Start Date: [ Immediate / Next Term / Next Academic Year ]
+- Additional Comments / Questions: [ Text Area ]
+- Submit Button: [ Complete Enrollment Application ]
+3. DIRECT CONTACT DETAILS
+- Email: admissions@bhga.co.za (or your preferred email address)
+- Phone / WhatsApp: +27 [XX XXX XXXX]
+- Office Hours: Monday – Friday, 08:00 – 16:00 (SAST)
+- Virtual Consultation: [ Book a 15-Minute Zoom Consultation ]
+MANDATORY FOOTER DISCLAIMER (On Every Page)
+Legal Disclaimer: Bethel House of God Academy (BHGA) is an independent online learning platform and tuition provider. We provide curriculum alignment, virtual instruction, and academic support for the Cambridge International syllabus. Bethel House of God Academy is not an accredited Cambridge International School and does not directly award examination board certificates. Students complete their tuition online with us and register as Private Candidates at accredited open Cambridge examination centres (such as British Council South Africa or approved local open centres) to sit their final external board examinations.

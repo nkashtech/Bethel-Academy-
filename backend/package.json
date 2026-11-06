@@ -1,0 +1,31 @@
+{
+  "name": "bhga-website-backend",
+  "version": "1.0.0",
+  "description": "Bethel House of God Academy website API: admission enquiries, applications and consultation bookings",
+  "main": "api/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "postinstall": "prisma generate",
+    "dev": "nodemon api/server.js",
+    "start": "node api/server.js",
+    "db:local": "sh scripts/mysql-local.sh",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "test": "node --test tests/"
+  },
+  "dependencies": {
+    "@prisma/client": "5.22.0",
+    "cors": "2.8.5",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "express-rate-limit": "7.4.1",
+    "helmet": "7.2.0",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.9",
+    "prisma": "5.22.0"
+  }
+}

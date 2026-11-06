@@ -1,0 +1,8 @@
+node_modules
+.env
+.env.production
+dist
+.DS_Store
+backend/mysql-data/
+coverage
+frontend/dist

@@ -1,0 +1,65 @@
+// Bethel House of God Academy website: what parents send through the three forms.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum SubmissionStatus {
+  NEW
+  CONTACTED
+  ENROLLED
+  CLOSED
+}
+
+// Homepage lead capture form.
+model Enquiry {
+  id         Int              @id @default(autoincrement())
+  parentName String           @db.VarChar(120)
+  email      String           @db.VarChar(160)
+  phone      String           @db.VarChar(30)
+  grade      String           @db.VarChar(20)
+  curriculum String           @db.VarChar(60)
+  status     SubmissionStatus @default(NEW)
+  createdAt  DateTime         @default(now())
+
+  @@index([createdAt])
+}
+
+// Admissions page enrollment application.
+model Application {
+  id                Int              @id @default(autoincrement())
+  parentName        String           @db.VarChar(120)
+  email             String           @db.VarChar(160)
+  phone             String           @db.VarChar(30)
+  address           String           @db.VarChar(250)
+  studentName       String           @db.VarChar(120)
+  studentDob        DateTime         @db.Date
+  pathway           String           @db.VarChar(30)
+  previousSchooling String           @db.VarChar(200)
+  startDate         String           @db.VarChar(30)
+  comments          String?          @db.Text
+  status            SubmissionStatus @default(NEW)
+  createdAt         DateTime         @default(now())
+
+  @@index([createdAt])
+}
+
+// "Book a 15-Minute Zoom Consultation".
+model Consultation {
+  id            Int              @id @default(autoincrement())
+  name          String           @db.VarChar(120)
+  email         String           @db.VarChar(160)
+  phone         String           @db.VarChar(30)
+  preferredDate DateTime         @db.Date
+  preferredTime String           @db.VarChar(40)
+  topic         String?          @db.Text
+  status        SubmissionStatus @default(NEW)
+  createdAt     DateTime         @default(now())
+
+  @@index([createdAt])
+}
