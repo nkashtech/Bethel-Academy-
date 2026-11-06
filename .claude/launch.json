@@ -4,14 +4,57 @@
     {
       "name": "backend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "backend", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "backend",
+        "run",
+        "dev"
+      ],
       "port": 3021
     },
     {
       "name": "frontend",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "frontend", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "frontend",
+        "run",
+        "dev"
+      ],
       "port": 3020
+    },
+    {
+      "name": "selah-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "../Selah-Music/frontend",
+        "run",
+        "dev"
+      ],
+      "port": 3030
+    },
+    {
+      "name": "selah-db",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "../Selah-Music/backend",
+        "run",
+        "db:local"
+      ],
+      "port": 3328
+    },
+    {
+      "name": "selah-backend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "../Selah-Music/backend",
+        "run",
+        "dev"
+      ],
+      "port": 3031
     }
   ]
 }

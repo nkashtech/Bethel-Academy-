@@ -29,7 +29,7 @@ export default function Fees() {
               return (
                 <Reveal key={p.id} delay={i * 80} data-tilt="5" className={`spotlight relative flex h-full flex-col rounded-[2rem] p-7 transition duration-500 ease-premium hover:-translate-y-1 ${top ? 'bg-royal text-white shadow-pop' : 'border border-line bg-surface shadow-soft'}`}>
                   {top && <span className="absolute -top-3 right-6 rounded-full bg-gold px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-royal-night">Up to 8 subjects</span>}
-                  <p className={`text-[12px] font-bold uppercase tracking-[0.16em] ${top ? 'text-gold-bright' : 'text-gold-deep'}`}>{p.id === 'igcse' ? 'IGCSE (Grades 10–12)' : `Grade (${p.short.replace('Grade ', '')})`}</p>
+                  <p className={`text-[12px] font-bold uppercase tracking-[0.16em] ${top ? 'text-gold-bright' : 'text-gold-deep'}`}>{p.feeLabel ? p.feeLabel : `Grade (${p.short.replace('Grade ', '')})`}</p>
                   <h3 className={`mt-2 font-serif text-2xl font-semibold ${top ? 'text-white' : 'text-royal-ink'}`}>{p.feePhase || p.phase}</h3>
                   <p className="mb-8 mt-6 flex items-baseline gap-1">
                     <span className={`font-serif text-5xl font-bold ${top ? 'text-white' : 'text-royal-text'}`}>{p.fee}</span>
@@ -55,7 +55,7 @@ export default function Fees() {
               <tbody>
                 {pathways.map((p) => (
                   <tr key={p.id} className="border-t border-line odd:bg-canvas">
-                    <td className="px-6 py-4 font-semibold text-royal-ink">{p.id === 'igcse' ? 'IGCSE (Grades 10–12)' : `GRADE (${p.short.replace('Grade ', '')})`}</td>
+                    <td className="px-6 py-4 font-semibold text-royal-ink">{p.feeLabel ? p.feeLabel : `GRADE (${p.short.replace('Grade ', '')})`}</td>
                     <td className="px-6 py-4 text-ink-soft">{p.feePhase || p.phase}</td>
                     <td className="px-6 py-4 text-right font-serif text-xl font-bold text-royal-text">{p.fee} / month</td>
                   </tr>
@@ -70,7 +70,7 @@ export default function Fees() {
         <div className="wrap grid gap-8 lg:grid-cols-2">
           <Reveal className="rounded-[2rem] bg-canvas p-8 sm:p-10">
             <BadgeCheck size={32} className="text-gold-deep" />
-            <h2 className="mt-4 font-serif text-4xl font-semibold text-royal-ink">What Our Tuition Includes</h2>
+            <h2 className="mt-4 font-serif text-4xl font-semibold text-royal-ink">What Your Tuition Includes</h2>
             <CheckList className="mt-6" items={fees.includes} />
             <Link to="/edubridge" className="mt-8 inline-flex items-center gap-2 font-semibold text-royal-text hover:text-gold-deep">Tour the Edubridge platform <ArrowRight size={16} /></Link>
           </Reveal>

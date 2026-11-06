@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, BadgeCheck, Building2, Info } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Info } from 'lucide-react'
 import { examGuide, photos } from '../content/site'
 import { CtaBand, Icon, PageHero, Reveal, SectionHead } from '../components/ui'
 
@@ -44,42 +44,32 @@ export default function ExamGuide() {
         </div>
       </section>
 
-      {/* USAf */}
-      <section id="usaf" className="py-24">
+      {/* Board exam stages: the three points where a BHGA learner writes Cambridge exams. */}
+      <section id="stages" className="py-24">
         <div className="wrap">
-          <Reveal className="relative overflow-hidden rounded-[2.5rem] bg-royal p-8 text-white sm:p-14">
+          <Reveal className="relative overflow-hidden rounded-[2.5rem] bg-royal p-8 text-white sm:p-14 dark:bg-royal-deep">
             <div className="stripes absolute inset-0 [--stripe:0.1]" />
-            <div className="relative grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-              <div>
-                <p className="eyebrow-light"><span className="h-px w-6 bg-current" />University entrance</p>
-                <h2 className="mt-3 font-serif text-4xl font-semibold leading-[1.05] sm:text-5xl">South African University Entry (USAf Exemption)</h2>
-                <p className="mt-5 text-lg text-white/80">{examGuide.recognition}</p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {examGuide.universities.map((u) => (
-                    <span key={u} className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-2 text-[14px] font-semibold"><Building2 size={15} className="text-gold" />{u}</span>
-                  ))}
+            <div className="relative">
+              <div className="flex flex-wrap items-end justify-between gap-6">
+                <div className="max-w-2xl">
+                  <p className="eyebrow-light"><span className="h-px w-6 bg-current" />Board exam stages</p>
+                  <h2 className="mt-3 font-serif text-4xl font-semibold leading-[1.05] sm:text-5xl">When your child writes Cambridge exams</h2>
+                  <p className="mt-4 text-lg text-white/80">BHGA teaches Grade R to Grade 10. Along the way there are three points where learners register as Private Candidates and sit external board exams.</p>
                 </div>
-                <p className="mt-8 text-white/80">{examGuide.exemptionAfter}</p>
+                <Link to="/academics#igcse" className="btn-gold">See the IGCSE phase <ArrowRight size={16} /></Link>
               </div>
-              <div className="rounded-[2rem] bg-surface p-8 text-royal-ink shadow-pop">
-                <BadgeCheck size={34} className="text-gold-deep" />
-                <p className="mt-4 text-ink-soft">{examGuide.exemptionLead}</p>
-                <div className="mt-6 grid grid-cols-[1fr_auto_1fr] items-center gap-3 text-center">
-                  <div className="rounded-2xl bg-royal-soft p-4">
-                    <p className="font-serif text-5xl font-bold text-royal-text">4</p>
-                    <p className="text-[13px] font-semibold">AS Levels</p>
-                    <p className="text-[12px] text-ink-muted">Grades A – D</p>
-                  </div>
-                  <span className="font-serif text-4xl text-gold-deep">+</span>
-                  <div className="rounded-2xl bg-gold-soft p-4">
-                    <p className="font-serif text-5xl font-bold text-gold-deep">1</p>
-                    <p className="text-[13px] font-semibold">IGCSE</p>
-                    <p className="text-[12px] text-ink-muted">Grades A* – C</p>
-                  </div>
-                </div>
-                <p className="mt-6 text-center font-serif text-xl italic">= Foreign Matriculation Exemption</p>
-                <Link to="/academics#igcse" className="btn-royal mt-6 w-full">See IGCSE subjects <ArrowRight size={16} /></Link>
-              </div>
+              <ol className="relative mt-12 grid gap-5 md:grid-cols-3">
+                <div aria-hidden="true" className="absolute left-[16%] right-[16%] top-9 hidden h-0.5 bg-gradient-to-r from-gold via-gold/50 to-gold md:block" />
+                {examGuide.stages.map((st, i) => (
+                  <li key={st.exam} className="relative rounded-[1.75rem] bg-surface p-7 text-center text-royal-ink shadow-pop" data-tilt="5">
+                    <span className="relative mx-auto grid h-[4.5rem] w-[4.5rem] place-items-center rounded-full bg-gold font-serif text-2xl font-bold text-[#0F2438] shadow-glow">{st.grade.replace('Grade ', 'Gr ')}</span>
+                    <p className="mt-5 text-[12px] font-bold uppercase tracking-[0.16em] text-gold-deep">Stage {i + 1} · {st.grade}</p>
+                    <h3 className="mt-1 font-serif text-[1.7rem] font-semibold leading-tight">{st.exam}</h3>
+                    <p className="mt-2 text-[14px] text-ink-soft">{st.after}</p>
+                  </li>
+                ))}
+              </ol>
+              <p className="mt-8 flex items-start gap-2 text-[14px] text-white/75"><BadgeCheck size={18} className="mt-0.5 shrink-0 text-gold" /> Exams are written in the May/June or October/November series, and Cambridge International sends the certificates to the exam centre for collection.</p>
             </div>
           </Reveal>
         </div>

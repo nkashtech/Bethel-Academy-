@@ -108,7 +108,7 @@ export default function Layout() {
       {/* Top bar */}
       <div className="hidden bg-royal-night text-[13px] text-white/70 md:block">
         <div className="wrap flex h-10 items-center justify-between gap-6">
-          <p className="font-serif text-[15px] italic text-gold-bright">Faith-based Cambridge online tuition · Grade R – Grade 12</p>
+          <p className="font-serif text-[15px] italic text-gold-bright">Faith-based Cambridge online tuition · Grade R – Grade 10</p>
           <div className="flex items-center gap-5">
             <a href={`mailto:${school.email}`} className="flex items-center gap-1.5 transition hover:text-white"><Mail size={14} />{school.email}</a>
             <a href={`https://wa.me/${school.whatsapp}`} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 transition hover:text-white"><Phone size={14} />{school.phone}</a>

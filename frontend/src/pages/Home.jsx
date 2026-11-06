@@ -129,7 +129,7 @@ export default function Home() {
           <div>
             <p className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-gold/40 bg-surface/80 px-3.5 py-1.5 text-[13px] font-semibold text-royal-ink shadow-soft backdrop-blur">
               <span className="relative flex h-2 w-2"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-gold opacity-75" /><span className="relative inline-flex h-2 w-2 rounded-full bg-gold" /></span>
-              Now enrolling · Grade R – Grade 12
+              Now enrolling · Grade R – Grade 10
             </p>
             <h1 className="mt-6 font-serif text-[3.1rem] font-semibold leading-[0.98] text-royal-ink sm:text-7xl xl:text-[5.8rem]">
               <Words text="Real Christian Values," start={150} />
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <dl className="mt-12 grid max-w-lg animate-fade-up grid-cols-3 divide-x divide-line rounded-2xl border border-line bg-surface/70 py-5 shadow-soft backdrop-blur [animation-delay:1100ms]">
               {[
-                [<Counter key="g" to={13} />, 'Grades, R to 12'],
+                [<Counter key="g" to={11} />, 'Grades, R to 10'],
                 [<Counter key="p" to={4} />, 'Learning pathways'],
                 [<Counter key="a" to={24} suffix="/7" />, 'Edubridge access'],
               ].map(([n, l]) => (
@@ -276,7 +276,7 @@ export default function Home() {
         <div className="wrap grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <SectionHead eyebrow="Good to know" title="Questions parents ask">
-              Straight answers about accreditation, exams, fees and university entrance.
+              Straight answers about accreditation, grades, exams and fees.
             </SectionHead>
             <Reveal delay={250}>
               <Link to="/exam-guide" className="btn-outline mt-8">Read the full exam guide <ArrowRight size={16} /></Link>

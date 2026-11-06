@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, GraduationCap, Landmark } from 'lucide-react'
+import { ArrowRight, GraduationCap } from 'lucide-react'
 import { pathways, photos } from '../content/site'
 import { CtaBand, PageHero, Reveal } from '../components/ui'
 
@@ -9,7 +9,7 @@ export default function Academics() {
   const igcse = pathways[3]
   return (
     <>
-      <PageHero eyebrow="Academics & Curriculum" title="Academic Programs & Subject Streams" subtitle="Cambridge-Aligned Instruction from Early Learning to Senior High School" crumb="Academics & Programs" photo={photos.girlStudy}>
+      <PageHero eyebrow="Academics & Curriculum" title="Academic Programs & Subject Streams (Grades R – 10)" subtitle="Cambridge-Aligned Instruction from Early Learning to IGCSE Foundation" crumb="Academics & Programs" photo={photos.girlStudy}>
         <div className="mt-8 flex flex-wrap gap-2">
           {pathways.map((p) => (
             <a key={p.id} href={`#${p.id}`} className="rounded-full border border-white/25 px-4 py-2 text-[13px] font-semibold text-white/90 transition hover:border-gold hover:bg-gold hover:text-royal-night">{p.short}</a>
@@ -55,8 +55,8 @@ export default function Academics() {
         <div className="stripes absolute right-0 top-0 h-full w-1/2 [--stripe:0.1] [mask-image:linear-gradient(to_left,black,transparent)]" />
         <div className="wrap relative">
           <Reveal className="max-w-3xl">
-            <p className="eyebrow-light"><span className="h-px w-6 bg-current" />Grades 10 – 12 · {igcse.fee}/month</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold leading-[1.05] sm:text-6xl">Cambridge IGCSE &amp; Senior High School</h2>
+            <p className="eyebrow-light"><span className="h-px w-6 bg-current" />Grade 10 · IGCSE Year 1 · {igcse.fee}/month</p>
+            <h2 className="mt-3 font-serif text-4xl font-semibold leading-[1.05] sm:text-6xl">IGCSE Phase (Grade 10)</h2>
             <p className="mt-5 text-lg text-white/75">{igcse.intro}</p>
           </Reveal>
 
@@ -83,13 +83,25 @@ export default function Academics() {
             </Reveal>
           </div>
 
-          <Reveal className="mt-6 grid items-center gap-6 rounded-[2rem] border border-gold/40 bg-gradient-to-br from-royal to-royal-deep p-8 md:grid-cols-[auto_1fr_auto] sm:p-10">
-            <span className="grid h-16 w-16 place-items-center rounded-2xl bg-gold text-royal-night"><Landmark size={30} /></span>
-            <div>
-              <h3 className="font-serif text-3xl font-semibold">High School University Pathway (USAf Exemption Track)</h3>
-              <p className="mt-2 text-white/80">{igcse.usaf}</p>
+          {/* The two-year IGCSE course: Year 1 with BHGA, board exams at the end of Grade 11. */}
+          <Reveal className="mt-6 rounded-[2rem] border border-gold/40 bg-gradient-to-br from-royal to-royal-deep p-8 sm:p-10">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <h3 className="font-serif text-3xl font-semibold">The 2-Year Cambridge IGCSE Course</h3>
+              <Link to="/exam-guide#stages" className="btn-gold btn-sm">Board exam stages <ArrowRight size={16} /></Link>
             </div>
-            <Link to="/exam-guide#usaf" className="btn-gold">USAf requirements <ArrowRight size={16} /></Link>
+            <ol className="relative mt-8 grid gap-4 md:grid-cols-2">
+              <div aria-hidden="true" className="absolute left-1/2 top-1/2 hidden h-0.5 w-10 -translate-x-1/2 bg-gold md:block" />
+              <li className="rounded-2xl bg-white/[0.08] p-6 ring-1 ring-gold/60">
+                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-gold-bright">Year 1 · With BHGA</p>
+                <p className="mt-1 font-serif text-4xl font-bold">Grade 10</p>
+                <p className="mt-2 text-white/80">Core syllabus theory across the learner's selected subject package.</p>
+              </li>
+              <li className="rounded-2xl bg-white/[0.04] p-6 ring-1 ring-white/15">
+                <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-gold-bright">Year 2 · Board exams</p>
+                <p className="mt-1 font-serif text-4xl font-bold">Grade 11</p>
+                <p className="mt-2 text-white/80">IGCSE board exams, written as a Private Candidate at an accredited Cambridge centre.</p>
+              </li>
+            </ol>
           </Reveal>
         </div>
       </section>

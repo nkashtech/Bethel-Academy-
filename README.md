@@ -11,8 +11,8 @@ The public website for **Bethel House of God Academy (BHGA)**, *Real Christian V
 |---|---|
 | Home (hero, welcome, BHGA Advantage, learning pathways, 4 steps, enquiry form) | `/` |
 | About Us (vision, mission, statement of faith, academic structure) | `/about` |
-| Academics & Programs (four phases, IGCSE streams, USAf track) | `/academics` |
-| Private Candidate & Exam Guide | `/exam-guide` |
+| Academics & Programs (Grade R – 10: four phases and the IGCSE streams) | `/academics` |
+| Private Candidate & Exam Guide (how board exams work, the three exam stages) | `/exam-guide` |
 | Tuition & Fees | `/fees` |
 | Edubridge E-Learning | `/edubridge` |
 | Admissions & Contact (application form, contact details, Zoom consultation booking) | `/admissions` |

@@ -1,4 +1,5 @@
 // Every word on the website, taken from "Bethel House of God Academy Website Structure.docx" (copy in docs/).
+// BHGA teaches Grade R to Grade 10; Grade 10 is Year 1 of the two-year IGCSE course.
 // Change wording, fees or contact details here and every page picks it up.
 
 export const school = {
@@ -44,21 +45,21 @@ export const photos = {
 export const home = {
   hero: {
     headline: 'Real Christian Values, Real Life Education',
-    sub: 'Empowering Grade R to High School learners across South Africa through high-quality, faith-based Cambridge online tuition on our interactive Edubridge platform.',
+    sub: 'Empowering Grade R to Grade 10 learners across South Africa through high-quality, faith-based Cambridge online tuition on our interactive Edubridge platform.',
   },
   welcome:
     'At Bethel House of God Academy, we nurture the whole child—academically, spiritually, and morally. We provide a safe, respectful, and inclusive virtual learning environment that builds a strong foundation for life-long learning. Our structured online tuition program supports home education families by offering rigorous, Cambridge-aligned academic instruction delivered by dedicated educators.',
   advantages: [
     { icon: 'ShieldCheck', title: 'Safe & Inclusive Environment', text: 'We provide a respectful online campus where learners grow in confidence, critical thinking, and Christian leadership under the guidance of passionate educators.' },
     { icon: 'MonitorPlay', title: 'Powered by Edubridge E-Learning', text: 'Our students access interactive live virtual classes, on-demand lesson recordings, digital study packs, and comprehensive revision resources anytime, anywhere.', link: '/edubridge' },
-    { icon: 'Globe2', title: 'Global Cambridge Framework', text: 'We prepare learners for internationally recognized Cambridge qualifications, paving the way for university admission in South Africa (via USAf Matriculation Exemption) and globally.' },
+    { icon: 'Globe2', title: 'Global Cambridge Framework', text: 'We prepare learners for internationally recognized Cambridge qualifications, paving the way for smooth progression into upper high school and eventual university entrance.' },
     { icon: 'ClipboardCheck', title: '100% Exam-Based (No Continuous SBA Stress)', text: 'Because Cambridge private candidate pathways are evaluated through final external board examinations, families avoid the administrative burden and continuous portfolio marking costs of traditional distance schools.' },
   ],
   steps: [
     { title: 'Enroll with BHGA', text: 'Register your child for online tuition and receive immediate access to the Edubridge E-Learning platform, live classes, and study packs.' },
     { title: 'Learn & Master Content', text: 'Participate in interactive daily virtual lessons, complete internal progress assessments, and work through past-paper drills guided by subject teachers.' },
-    { title: 'Register for External Board Exams', text: 'When ready to write official Cambridge examinations (IGCSE / AS Level), register directly as a Private Candidate at an accredited host centre near you (such as British Council SA or local approved open centres).' },
-    { title: 'Earn Accredited Certificates', text: "Receive official Cambridge UK certificates and convert your results through USAf (Universities South Africa) for direct entrance into local or international bachelor's degree programs." },
+    { title: 'Progress Through Stages', text: 'Build core subject mastery from Grade R through Grade 10 without continuous portfolio or continuous SBA stress.' },
+    { title: 'Prepare for Board Exams', text: 'When reaching external board exam stages (such as Primary Checkpoint, Lower Secondary Checkpoint, or IGCSE in Grade 11), register directly as a Private Candidate at an accredited host centre near you (such as British Council SA or local approved open centres).' },
   ],
 }
 
@@ -69,7 +70,7 @@ export const pathways = [
     summary: 'Building strong foundational literacy, numeracy, and core inquiry in a supportive, engaging digital classroom.',
     intro: 'Our early learning program provides a structured, gentle introduction to online education, focusing on reading confidence, numerical comprehension, and creative curiosity.',
     lists: [
-      { label: 'Core Focus Areas', items: ['Foundation English', 'Early Mathematics', 'Environmental Science', 'Creative Arts', 'Values Education'] },
+      { label: 'Core Focus Areas', items: ['Foundation English', 'Early Mathematics', 'Environmental Science', 'ICT', 'Global Perspectives', 'Creative Arts', 'Personal Development'] },
     ],
     format: { label: 'Learning Format', text: 'Live daily virtual classes, guided interactive exercises, and teacher-assessed unit reviews.' },
   },
@@ -78,7 +79,7 @@ export const pathways = [
     summary: 'Consolidating core concepts in English, Mathematics, Science, and Humanities to prepare learners for upper primary benchmarks.',
     intro: 'During the primary years, learners transition from basic literacy to conceptual understanding across core subjects.',
     lists: [
-      { label: 'Core Subjects', items: ['English Language', 'Mathematics', 'Natural Sciences', 'Humanities', 'Digital Literacy'] },
+      { label: 'Core Subjects', items: ['English Language', 'Mathematics', 'Sciences', 'ICT', 'Global Perspectives', 'Computing', 'Art & Design', 'Physical Education'] },
     ],
     format: { label: 'Learning Format', text: 'Structured weekly schedules on the Edubridge platform, live teacher instruction, and diagnostic unit checks.' },
   },
@@ -87,14 +88,14 @@ export const pathways = [
     summary: 'Developing advanced analytical skills across languages, mathematics, sciences, and electives as learners transition into high school.',
     intro: 'This stage bridges primary education with high school specialization, building analytical reasoning, scientific inquiry, and structured essay-writing skills.',
     lists: [
-      { label: 'Core Subjects', items: ['Advanced English', 'Mathematics', 'General Science (Physics, Chemistry, Biology)', 'History', 'Geography', 'ICT'] },
+      { label: 'Core Subjects', items: ['Advanced English', 'Mathematics', 'Sciences', 'Global Perspectives', 'History', 'Geography', 'Afrikaans', 'Computing', 'Art & Design', 'Physical Education'] },
     ],
     format: { label: 'Goal', text: 'Building academic confidence and subject readiness for IGCSE selection.' },
   },
   {
-    id: 'igcse', grades: 'Grades 10 – 12', short: 'IGCSE Grade 10 – 12', phase: 'IGCSE & Senior Phase', feePhase: 'Senior High School (Up to 8 Subjects)', fee: 'R3,900', photo: 'teenGirl',
-    summary: 'Comprehensive preparation across core compulsory subjects and specialized streams (Sciences, Commercials, Humanities) for international board exams and university entrance.',
-    intro: 'At high school level, BHGA offers comprehensive teaching across compulsory core subjects and specialized elective streams.',
+    id: 'igcse', grades: 'Grade 10', short: 'IGCSE Grade 10', phase: 'IGCSE Phase', stage: 'IGCSE Foundation Year / Upper Secondary', feeLabel: 'IGCSE (Grade 10)', feePhase: 'IGCSE Year 1 (Up to 8 Subjects)', formPhase: 'Senior Phase Year 1', fee: 'R3,900', photo: 'teenGirl',
+    summary: 'Comprehensive Year-1 tuition covering core compulsory subjects and specialized streams (Sciences, Commercials, Humanities) to prepare learners for IGCSE board examinations in Grade 11.',
+    intro: 'Grade 10 marks Year 1 of the 2-year Cambridge IGCSE linear course. At BHGA, Grade 10 learners cover core syllabus theory across their selected subject package to prepare for board exams written at the end of Grade 11.',
     lists: [
       { label: 'Compulsory Core Subjects', items: ['English Language (Compulsory)', 'Mathematics (Compulsory)'] },
     ],
@@ -103,7 +104,6 @@ export const pathways = [
       { name: 'Commercials', items: ['Accounting', 'Business Studies', 'Economics'] },
       { name: 'Humanities & IT', items: ['Geography', 'Computer Science'] },
     ],
-    usaf: 'For learners aiming for South African university entrance after high school, we guide students through the required 4 AS Level + 1 IGCSE subject selection (covering First Language, Second Language, Quantitative/Science, and Academic Electives) to satisfy Universities South Africa (USAf) Foreign Matriculation Exemption requirements.',
   },
 ]
 
@@ -135,15 +135,16 @@ export const examGuide = {
   ],
   steps: [
     { icon: 'Laptop', title: 'Tuition at BHGA', text: 'Learners complete their daily learning, live classes, and revision online with Bethel House of God Academy.' },
-    { icon: 'MapPin', title: 'Selecting an Exam Centre', text: 'When ready to write board exams (such as Checkpoints, IGCSE, or AS Levels), parents register their child as a Private Candidate at an accredited open Cambridge examination centre (such as British Council South Africa or approved local open centres).' },
+    { icon: 'MapPin', title: 'Selecting an Exam Centre', text: 'When reaching board exam stages (Primary Checkpoint in Grade 6, Lower Secondary Checkpoint in Grade 9, or IGCSE in Grade 11), parents register their child as a Private Candidate at an accredited open Cambridge examination centre (such as British Council South Africa or approved local open centres).' },
     { icon: 'PenLine', title: 'Sitting Examinations', text: 'The student physically sits for their external board papers during the official May/June or October/November examination series.' },
     { icon: 'Award', title: 'Receiving UK Qualifications', text: 'Cambridge International issues official hardcopy certificates directly to the examination centre for collection.' },
   ],
-  universities: ['UCT', 'Wits', 'UP', 'Stellenbosch', 'Unisa'],
-  recognition: 'Cambridge qualifications are fully recognized by all South African public universities (such as UCT, Wits, UP, Stellenbosch, Unisa, etc.) and international institutions worldwide.',
-  exemptionLead: "To qualify for a South African Foreign Matriculation Exemption (Bachelor's Degree Pass equivalent), high school learners complete:",
-  exemption: '4 AS Levels (Grades A–D) + 1 IGCSE (Grades A*–C)',
-  exemptionAfter: 'Once board results are released in January, certificates are submitted to Universities South Africa (USAf) to receive a formal Matriculation Exemption Certificate for direct university enrollment.',
+  // The three board exam stages named in "Selecting an Exam Centre".
+  stages: [
+    { exam: 'Primary Checkpoint', grade: 'Grade 6', after: 'End of the Intermediate Phase' },
+    { exam: 'Lower Secondary Checkpoint', grade: 'Grade 9', after: 'End of the Lower Secondary Phase' },
+    { exam: 'Cambridge IGCSE', grade: 'Grade 11', after: 'After IGCSE Year 1 with BHGA in Grade 10' },
+  ],
 }
 
 export const fees = {
@@ -157,7 +158,7 @@ export const fees = {
     'Regular internal progress checks, mock examination papers, and tutor feedback.',
     'Parent support and academic progress tracking.',
   ],
-  examNote: 'Monthly tuition fees cover all online instruction, platform access, learning materials, and internal academic support provided by Bethel House of God Academy. Official external Cambridge Board Examination fees (written at Checkpoint, IGCSE, or AS Level) are separate and are paid directly by parents to the accredited exam host venue (e.g., British Council South Africa) at the time of exam entry.',
+  examNote: 'Monthly tuition fees cover all online instruction, platform access, learning materials, and internal academic support provided by Bethel House of God Academy. Official external Cambridge Board Examination fees (written at Checkpoint or IGCSE level) are separate and are paid directly by parents to the accredited exam host venue (e.g., British Council South Africa) at the time of exam entry.',
 }
 
 export const edubridge = {
@@ -172,18 +173,18 @@ export const edubridge = {
   ],
 }
 
-export const curricula = ['Cambridge', 'CAPS (South African national)', 'IEB', 'Home education / Other']
-export const gradeOptions = ['Grade R', ...Array.from({ length: 12 }, (_, i) => `Grade ${i + 1}`)]
+export const curricula = ['CAPS', 'IEB', 'Cambridge', 'Home Education']
+export const gradeOptions = ['Grade R', ...Array.from({ length: 10 }, (_, i) => `Grade ${i + 1}`)]
 export const startOptions = ['Immediate', 'Next Term', 'Next Academic Year']
 
 // Answers taken from the Website Structure document, for the home page FAQ.
 export const faqs = [
   { q: 'Is Bethel House of God Academy an accredited Cambridge school?', a: 'No. BHGA is an independent online learning platform and tuition provider. We provide curriculum alignment, virtual instruction and academic support for the Cambridge International syllabus. Learners register as Private Candidates at accredited open Cambridge examination centres (such as British Council South Africa) to write their final board examinations.' },
-  { q: 'Are Cambridge exam fees included in the monthly tuition?', a: 'No. Monthly tuition covers all online instruction, platform access, learning materials and internal academic support. Official Cambridge board examination fees (Checkpoint, IGCSE or AS Level) are paid directly by parents to the accredited exam host venue at the time of exam entry.' },
-  { q: 'Where and when does my child write board exams?', a: 'When ready, parents register their child as a Private Candidate at an accredited open Cambridge centre near them. Learners sit their papers in person during the official May/June or October/November examination series, and Cambridge sends the certificates to the centre for collection.' },
-  { q: 'Can my child enter a South African university?', a: 'Yes. Cambridge qualifications are recognised by all South African public universities. Learners who complete 4 AS Levels (grades A–D) and 1 IGCSE (grades A*–C) can apply to Universities South Africa (USAf) for a Foreign Matriculation Exemption Certificate.' },
+  { q: 'Are Cambridge exam fees included in the monthly tuition?', a: 'No. Monthly tuition covers all online instruction, platform access, learning materials and internal academic support. Official Cambridge board examination fees (Checkpoint or IGCSE level) are paid directly by parents to the accredited exam host venue at the time of exam entry.' },
+  { q: 'Where and when does my child write board exams?', a: 'At each board exam stage (Primary Checkpoint in Grade 6, Lower Secondary Checkpoint in Grade 9, or IGCSE in Grade 11), parents register their child as a Private Candidate at an accredited open Cambridge centre near them. Learners sit their papers in person during the official May/June or October/November examination series, and Cambridge sends the certificates to the centre for collection.' },
+  { q: 'Which grades do you teach?', a: 'Grade R to Grade 10. Grade 10 is Year 1 of the two-year Cambridge IGCSE course: learners cover the core syllabus theory with us and write their IGCSE board exams at the end of Grade 11.' },
   { q: 'What does tuition include?', a: 'Live daily virtual classes with qualified educators, 24/7 access to the Edubridge E-Learning platform (recordings, notes and exercises), full subject coverage, regular progress checks and mock exams, and parent support with progress tracking.' },
   { q: 'Is there a registration fee?', a: 'Yes, a once-off, non-refundable R1,000 administrative onboarding fee per learner.' },
 ]
 
-export const subjects = ['English', 'Mathematics', 'Physics', 'Chemistry', 'Biology', 'Accounting', 'Business Studies', 'Economics', 'Geography', 'History', 'Computer Science', 'Afrikaans', 'Global Perspectives', 'Creative Arts', 'Values Education']
+export const subjects = ['English', 'Mathematics', 'Sciences', 'Physics', 'Chemistry', 'Biology', 'Global Perspectives', 'ICT', 'Computing', 'Afrikaans', 'History', 'Geography', 'Art & Design', 'Physical Education', 'Accounting', 'Business Studies', 'Economics', 'Computer Science']

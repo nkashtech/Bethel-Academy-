@@ -26,7 +26,11 @@ function useSmoothScroll() {
 export function smoothTo(target, offset = -136) {
   // Work out the page position ourselves: it's reliable whatever the layout above has just done.
   const y = Math.max(0, typeof target === 'number' ? target : (target?.getBoundingClientRect().top ?? 0) + window.scrollY + offset)
-  if (window.__lenis) window.__lenis.scrollTo(y, { duration: 1.4, force: true })
+  if (window.__lenis) {
+    // A page that has just loaded may be taller than Lenis last measured; re-measure so it can reach the target.
+    window.__lenis.resize()
+    window.__lenis.scrollTo(y, { duration: 1.4, force: true })
+  }
   else window.scrollTo({ top: y, behavior: 'smooth' })
 }
 

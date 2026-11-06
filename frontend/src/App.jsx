@@ -46,7 +46,8 @@ function ScrollManager() {
       let tries = 0
       const go = () => {
         const el = document.getElementById(hash.slice(1))
-        if (el) smoothTo(el)
+        // Wait a frame after the section appears so the page above it has its full height.
+        if (el) requestAnimationFrame(() => requestAnimationFrame(() => smoothTo(el)))
         else if (tries++ < 20) setTimeout(go, 50)
       }
       go()

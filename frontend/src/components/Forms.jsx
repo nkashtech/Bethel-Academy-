@@ -135,7 +135,7 @@ export function EnquiryForm() {
       </Field>
       <Field label="Learner's Target Grade" required>
         <select className="input" required value={v.grade} onChange={set('grade')}>
-          <option value="" disabled>Grade R – Grade 12</option>
+          <option value="" disabled>Grade R – Grade 10</option>
           {gradeOptions.map((g) => <option key={g}>{g}</option>)}
         </select>
       </Field>
@@ -222,7 +222,7 @@ export function ApplicationForm() {
                 <input type="radio" name="pathway" value={p.id} checked={on} onChange={set('pathway')} className="mt-1 h-4 w-4 accent-[#2B5B84]" />
                 <span>
                   <span className="block font-semibold text-royal-ink">{p.short}</span>
-                  <span className="block text-[13px] text-ink-soft">{p.phase} · <strong className="text-gold-deep">{p.fee}/pm</strong></span>
+                  <span className="block text-[13px] text-ink-soft">{p.formPhase || p.phase} · <strong className="text-gold-deep">{p.fee}/pm</strong></span>
                 </span>
               </label>
             )
@@ -301,7 +301,7 @@ export function ConsultationForm() {
         </select>
       </Field>
       <Field label="What would you like to discuss?" className="sm:col-span-2">
-        <textarea className="input min-h-[96px]" maxLength={1000} placeholder="e.g. Grade 10 subject choices for the USAf exemption" value={v.topic} onChange={set('topic')} />
+        <textarea className="input min-h-[96px]" maxLength={1000} placeholder="e.g. Choosing Grade 10 IGCSE subjects" value={v.topic} onChange={set('topic')} />
       </Field>
       <div className="sm:col-span-2">
         <SubmitButton busy={busy}>Book My 15-Minute Zoom Call</SubmitButton>

@@ -6,12 +6,12 @@ import { Crest, GoldFlakes } from './ui'
 import { smoothTo } from './Effects'
 import { useIsDark } from './theme'
 
-// One chapter per step of the "4 simple steps to graduation" from the brief.
+// One chapter per step of the "4 simple steps" from the brief.
 const CHAPTERS = [
   { word: 'Begin', tag: 'Beginning', photo: 'girlLaptop', dark: true },
   { word: 'Learn', tag: 'Learning', photo: 'girlsTablet', dark: false },
-  { word: 'Write', tag: 'Examination', photo: 'boyWriting', dark: true },
-  { word: 'Graduate', tag: 'Graduation', photo: 'graduateKid', dark: false },
+  { word: 'Grow', tag: 'Growing', photo: 'boysBackpacks', dark: true },
+  { word: 'Prepare', tag: 'Preparation', photo: 'boyWriting', dark: false },
 ].map((c, i) => ({ ...c, ...home.steps[i] }))
 
 // A word split into letters that rise out of a mask when its chapter arrives.
