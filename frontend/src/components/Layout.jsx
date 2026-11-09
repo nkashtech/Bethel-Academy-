@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import { ArrowRight, ArrowUp, Clock, Mail, Menu, MessageCircle, Monitor, Moon, Phone, Sun, X } from 'lucide-react'
-import { nav, school, disclaimer, pathways } from '../content/site'
+import { nav, school, disclaimer, pathways, telHref } from '../content/site'
 import { Crest } from './ui'
 import { useTheme } from './theme'
 import Effects, { smoothTo } from './Effects'
@@ -111,7 +111,7 @@ export default function Layout() {
           <p className="font-serif text-[15px] italic text-gold-bright">Faith-based Cambridge online tuition · Grade R – Grade 10</p>
           <div className="flex items-center gap-5">
             <a href={`mailto:${school.email}`} className="flex items-center gap-1.5 transition hover:text-white"><Mail size={14} />{school.email}</a>
-            <a href={`https://wa.me/${school.whatsapp}`} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 transition hover:text-white"><Phone size={14} />{school.phone}</a>
+            <a href={telHref(school.phones[0])} className="flex items-center gap-1.5 transition hover:text-white"><Phone size={14} />{school.phones[0]}</a>
             <span className="hidden items-center gap-1.5 lg:flex"><Clock size={14} />Mon – Fri, 08:00 – 16:00</span>
           </div>
         </div>
@@ -211,7 +211,9 @@ export default function Layout() {
             <h3 className="font-sans text-[11.5px] font-semibold uppercase tracking-[0.22em] text-gold-bright">Contact Admissions</h3>
             <ul className="mt-5 space-y-3 text-[14px]">
               <li><a href={`mailto:${school.email}`} className="flex items-center gap-2.5 transition hover:text-white"><Mail size={16} className="text-gold" />{school.email}</a></li>
-              <li><a href={`https://wa.me/${school.whatsapp}`} target="_blank" rel="noreferrer" className="flex items-center gap-2.5 transition hover:text-white"><Phone size={16} className="text-gold" />{school.phone}</a></li>
+              {school.phones.map((n) => (
+                <li key={n}><a href={telHref(n)} className="flex items-center gap-2.5 transition hover:text-white"><Phone size={16} className="text-gold" />{n}</a></li>
+              ))}
               <li className="flex items-center gap-2.5"><Clock size={16} className="text-gold" />{school.officeHours}</li>
             </ul>
             <Link to="/admissions#consultation" className="btn-outline-light btn-sm mt-6">Book a 15-Minute Zoom Consultation</Link>

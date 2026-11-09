@@ -38,7 +38,7 @@ function HeroCollage() {
 
       <div data-depth="18" className={`${col} left-[2%] top-[14%] w-[30%]`}>
         <div className={`${pill} h-56 animate-fade-up bg-gold [animation-delay:200ms] sm:h-72`}><img src={photos.girlLaptop} alt="Learner smiling at her laptop" className={img} /></div>
-        <div className={`${pill} h-32 animate-fade-up bg-royal [animation-delay:450ms] sm:h-40`}><img src={photos.boySmile} alt="" className={img} /></div>
+        <div className={`${pill} h-32 animate-fade-up bg-royal [animation-delay:450ms] sm:h-40`}><img src={photos.boyUniform} alt="" className={img} /></div>
       </div>
       <div data-depth="-12" className={`${col} left-[35%] top-0 w-[30%]`}>
         <div className="grid h-40 animate-fade-up place-items-center rounded-full border-4 border-gold/70 bg-paper shadow-glow sm:h-48">
@@ -173,7 +173,7 @@ export default function Home() {
           <Reveal from="left" className="relative mx-auto w-full max-w-md">
             <div className="stripes absolute -inset-4 rounded-[3rem] [--stripe:0.25]" />
             <Reveal from="clip" className="group relative overflow-hidden rounded-[2.5rem] bg-royal shadow-pop">
-              <img src={photos.girlReading} alt="Learner reading at home" className="h-[480px] w-full object-cover transition duration-[1.2s] ease-premium group-hover:scale-105" loading="lazy" />
+              <img src={photos.studentReading} alt="Learner in school uniform reading a book" className="h-[480px] w-full object-cover transition duration-[1.2s] ease-premium group-hover:scale-105" loading="lazy" />
               <div className="absolute inset-0 bg-gradient-to-t from-royal-night/50 via-transparent to-transparent" />
             </Reveal>
             <div className="absolute -bottom-8 -right-4 w-48 animate-drift rounded-3xl border border-line bg-surface/95 p-5 text-center shadow-pop backdrop-blur sm:-right-10">

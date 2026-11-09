@@ -7,12 +7,15 @@ export const school = {
   short: 'BHGA',
   motto: 'Real Christian Values, Real life Education',
   email: 'bethelhouseofgodacademy@gmail.com',
-  // Replace with the real number. WhatsApp links use the digits only.
-  phone: '+27 00 000 0000',
-  whatsapp: '27000000000',
+  // The first number is the main line and also opens WhatsApp chats.
+  phones: ['+27 79 117 5723', '+27 81 749 8920', '+27 83 780 5538'],
+  whatsapp: '27791175723',
   officeHours: 'Monday – Friday, 08:00 – 16:00 (SAST)',
   registrationFee: 'R1,000',
 }
+
+// Turns '+27 79 117 5723' into 'tel:+27791175723'.
+export const telHref = (n) => `tel:${n.replace(/\s/g, '')}`
 
 export const nav = [
   { to: '/', label: 'Home' },
@@ -32,14 +35,14 @@ export const photos = {
   girlLaptop: u('photo-1758525861793-f278aacf6bb5'),
   girlStudy: u('photo-1758525861725-e0fcc0c1301c'),
   boysBackpacks: u('photo-1548102245-c79dbcfa9f92'),
-  boySmile: u('photo-1539887523427-bb750641ad29'),
+  boyUniform: u('photo-1773238582974-9c0aea55e842'),
   girlSmile: u('photo-1617056239820-8ce90ba48193'),
   girlsTablet: u('photo-1744973149455-adf9278070da'),
   teenGirl: u('photo-1744973055670-e8ebb6261541'),
   graduates: u('photo-1594750852563-5ed8e0421d40', 1200, 900),
   graduateKid: u('photo-1627679673481-470c02807cc0'),
   boyWriting: u('photo-1529390079861-591de354faf5'),
-  girlReading: u('photo-1543661976-ce48a8d34c22'),
+  studentReading: u('photo-1769000066260-f990ccd0ec80'),
 }
 
 export const home = {

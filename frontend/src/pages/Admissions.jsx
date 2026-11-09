@@ -1,17 +1,18 @@
-import { Clock, Mail, MessageCircle, Video } from 'lucide-react'
-import { photos, school } from '../content/site'
+import { Clock, Mail, MessageCircle, Phone, Video } from 'lucide-react'
+import { photos, school, telHref } from '../content/site'
 import { PageHero } from '../components/ui'
 import { ApplicationForm, ConsultationForm } from '../components/Forms'
 
 export default function Admissions() {
   const contacts = [
     { icon: Mail, label: 'Email', value: school.email, href: `mailto:${school.email}` },
-    { icon: MessageCircle, label: 'Phone / WhatsApp', value: school.phone, href: `https://wa.me/${school.whatsapp}` },
+    ...school.phones.map((n, i) => ({ icon: Phone, label: i === 0 ? 'Phone (Main Line)' : 'Phone', value: n, href: telHref(n) })),
+    { icon: MessageCircle, label: 'WhatsApp', value: school.phones[0], href: `https://wa.me/${school.whatsapp}` },
     { icon: Clock, label: 'Office Hours', value: school.officeHours },
   ]
   return (
     <>
-      <PageHero eyebrow="Admissions & Contact" title="Join Bethel House of God Academy" subtitle="Enrollment & Consultation Enquiries" crumb="Admissions & Contact" photo={photos.boySmile}>
+      <PageHero eyebrow="Admissions & Contact" title="Join Bethel House of God Academy" subtitle="Enrollment & Consultation Enquiries" crumb="Admissions & Contact" photo={photos.boyUniform}>
         <div className="mt-8 flex flex-wrap gap-3">
           <a href="#apply" className="btn-gold">Start the application</a>
           <a href="#consultation" className="btn-outline-light">Book a Free Consultation</a>
@@ -46,7 +47,7 @@ export default function Admissions() {
                       </>
                     )
                     return (
-                      <li key={c.label}>
+                      <li key={c.label + c.value}>
                         {c.href ? <a href={c.href} target={c.href.startsWith('http') ? '_blank' : undefined} rel="noreferrer" className="flex items-center gap-4 rounded-2xl transition hover:text-gold-bright">{inner}</a> : <div className="flex items-center gap-4">{inner}</div>}
                       </li>
                     )
